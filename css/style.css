@@ -1,9 +1,4 @@
-/*--
-	Author: W3Layouts
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
---*/
+
 
 html,
 body {
@@ -71,11 +66,6 @@ ul {
     padding: 0;
 }
 
-/*-- header --*/
-
-/* header */
-
-/* CSS Document */
 
 header {
     position: absolute;
@@ -88,7 +78,6 @@ header {
     display: none;
 }
 
-/* Giving a background-color to the nav container. */
 
 nav {
     margin: 0;
@@ -114,17 +103,12 @@ nav {
 
 
 
-/* Since we'll have the "ul li" "float:left"
- * we need to add a clear after the container. */
-
 nav:after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* Removing padding, margin and "list-style" from the "ul",
- * and adding "position:reltive" */
 
 nav ul {
     float: right;
@@ -134,7 +118,6 @@ nav ul {
     position: relative;
 }
 
-/* Positioning the navigation items inline */
 
 nav ul li {
     margin: 0px 0.3em;
@@ -142,7 +125,6 @@ nav ul li {
     float: left;
 }
 
-/* Styling the links */
 
 nav ul.menu li a {
     color: #fff;

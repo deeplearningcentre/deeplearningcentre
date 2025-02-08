@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQLite Learning Lecture Plan by Deep Learning Centre Gurgaon</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2rem;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* Section Title Styling */
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+
+        /* Lecture List Styling */
+        .lecture-list {
+            list-style: none;
+            margin-left: 20px;
+            padding-left: 10px;
+        }
+
+        .lecture-list li {
+            margin: 8px 0;
+        }
+
+        /* Code Styling */
+        code {
+            background-color: #f4f4f4;
+            padding: 4px 6px;
+            font-family: Consolas, monospace;
+            font-size: 0.95rem;
+            border-radius: 4px;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: Consolas, monospace;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+
+        /* Note Section Styling */
+        .note {
+            background-color: #e7f7e7;
+            border-left: 5px solid #4CAF50;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .note h3 {
+            font-size: 1.2rem;
+            color: #4CAF50;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #777;
+            margin-top: 40px;
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
+        }
+
+        /* Link Styling */
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    SQLite Learning Lecture Plan by Deep Learning Centre Gurgaon
+</header>
+
+<section>
+    <h2>1. Introduction to SQLite</h2>
+    <ul class="lecture-list">
+        <li>What is SQLite?</li>
+        <li>Key Features of SQLite</li>
+        <li>SQLite vs Other Databases (e.g., MySQL, PostgreSQL)</li>
+        <li>Applications of SQLite in real-world development</li>
+    </ul>
+</section>
+
+<section>
+    <h2>2. Setting up SQLite</h2>
+    <ul class="lecture-list">
+        <li>Installation on Windows, macOS, and Linux</li>
+        <li>Setting up SQLite command line interface</li>
+        <li>Using SQLite in a Python environment</li>
+    </ul>
+</section>
+
+<section>
+    <h2>3. Basic SQLite Commands</h2>
+    <ul class="lecture-list">
+        <li>Opening a database: <code>sqlite3 database_name.db</code></li>
+        <li>Creating a table: 
+            <pre>CREATE TABLE students (id INTEGER PRIMARY KEY, name TEXT, age INTEGER);</pre>
+        </li>
+        <li>Inserting data: 
+            <pre>INSERT INTO students (name, age) VALUES ('Alice', 22);</pre>
+        </li>
+        <li>Querying data: 
+            <pre>SELECT * FROM students;</pre>
+        </li>
+        <li>Updating data: 
+            <pre>UPDATE students SET age = 23 WHERE name = 'Alice';</pre>
+        </li>
+        <li>Deleting data: 
+            <pre>DELETE FROM students WHERE name = 'Alice';</pre>
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h2>4. Advanced SQLite Concepts</h2>
+    <ul class="lecture-list">
+        <li>Using SQLite with Foreign Keys</li>
+        <li>Transactions and Rollbacks</li>
+        <li>Creating indexes to optimize queries</li>
+        <li>Using Views and Virtual Tables</li>
+        <li>SQLite Data Types and Constraints</li>
+    </ul>
+</section>
+
+<section>
+    <h2>5. SQLite and Programming Languages</h2>
+    <ul class="lecture-list">
+        <li>SQLite with Python</li>
+        <li>SQLite with PHP</li>
+        <li>SQLite with JavaScript (Node.js)</li>
+        <li>Connecting SQLite with Java applications</li>
+    </ul>
+</section>
+
+<section>
+    <h2>6. Best Practices and Optimization</h2>
+    <ul class="lecture-list">
+        <li>Database design best practices</li>
+        <li>Query optimization and performance tuning</li>
+        <li>Backup and restoration of SQLite databases</li>
+        <li>Handling large datasets in SQLite</li>
+    </ul>
+</section>
+
+<section class="note">
+    <h3>Note:</h3>
+    <p>This lecture plan is designed to give you a comprehensive understanding of SQLite, from the basics to more advanced concepts. Each section is equipped with practical examples to help you grasp the core ideas. Make sure to follow along with the examples to get hands-on experience!</p>
+</section>
+
+<footer>
+    <p>2018 Deep Learning Centre, Gurugram. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

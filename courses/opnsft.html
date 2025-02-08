@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenShift Learning Plan by Deep Learning Centre Gurgaon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #d84b16;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #d84b16;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin: 8px 0;
+        }
+        .week {
+            background-color: #ffe5d0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .assignments {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>OpenShift Learning Plan by Deep Learning Centre Gurgaon</h1>
+</header>
+
+<section>
+    <h2>Week 1: Introduction to OpenShift and Containers</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Understand the basics of OpenShift, containers, and how they fit into modern application deployment.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>What is OpenShift?</li>
+            <li>Containers and Kubernetes basics</li>
+            <li>Why use OpenShift for containerized applications?</li>
+            <li>OpenShift Architecture Overview</li>
+            <li>Setting up OpenShift: Installation options (Minishift, OpenShift CLI)</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Install Minishift or OpenShift Local and start your first OpenShift cluster.</li>
+            <li>Explore OpenShift Console and the basic CLI commands (`oc` commands).</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 2: OpenShift Projects and Applications</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn how to create and manage projects in OpenShift and deploy simple applications.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Understanding OpenShift Projects</li>
+            <li>Creating and managing Projects in OpenShift</li>
+            <li>Deploying simple applications in OpenShift</li>
+            <li>Understanding Deployment Configurations and Builds</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Create a new OpenShift Project and deploy a simple web application (e.g., a basic Node.js app).</li>
+            <li>Test the application deployment using OpenShift CLI and Console.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 3: OpenShift Pods and Deployments</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn about OpenShift Pods and how to manage applications with Deployments.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Understanding Pods and their lifecycle in OpenShift</li>
+            <li>Creating Pods in OpenShift</li>
+            <li>Scaling Pods and Deployments in OpenShift</li>
+            <li>Managing Rollouts and Rollbacks in OpenShift Deployments</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Create a Pod and deploy it to an OpenShift Project.</li>
+            <li>Scale a deployment (add replicas) and perform a rolling update of a deployed application.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 4: OpenShift Services and Routes</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn how to expose applications in OpenShift using Services and Routes.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>What are Services in OpenShift?</li>
+            <li>Types of Services in OpenShift (ClusterIP, NodePort, LoadBalancer)</li>
+            <li>Creating and Managing Services in OpenShift</li>
+            <li>What are Routes in OpenShift and how to expose services to the outside world</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Create a Service to expose an application internally.</li>
+            <li>Set up a Route to expose the application externally to the internet.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 5: OpenShift Persistent Storage</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn about persistent storage management in OpenShift.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>What is Persistent Storage in OpenShift?</li>
+            <li>Understanding Persistent Volumes (PVs) and Persistent Volume Claims (PVCs)</li>
+            <li>Types of storage supported in OpenShift: NFS, iSCSI, Ceph, etc.</li>
+            <li>Managing and deploying applications with Persistent Storage</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Create a Persistent Volume (PV) and Persistent Volume Claim (PVC) in OpenShift.</li>
+            <li>Deploy an application that requires persistent storage (e.g., a database).</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 6: OpenShift Networking and Security</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn how to secure and configure networking in OpenShift.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Understanding OpenShift Networking concepts</li>
+            <li>Managing Network Policies in OpenShift</li>
+            <li>Securing applications and managing Secrets in OpenShift</li>
+            <li>Service Accounts and Role-Based Access Control (RBAC)</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Create and apply a Network Policy to restrict access between Pods.</li>
+            <li>Create Secrets and use them in an application to secure sensitive data.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 7: OpenShift Scaling and Autoscaling</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn how to scale applications and configure autoscaling in OpenShift.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>What is Horizontal Pod Autoscaling (HPA)?</li>
+            <li>Setting up Autoscaling based on metrics</li>
+            <li>Scaling Applications Manually in OpenShift</li>
+            <li>Vertical Scaling of Pods in OpenShift</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Enable Horizontal Pod Autoscaling (HPA) on a deployment.</li>
+            <li>Manually scale a deployment and observe the behavior.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 8: OpenShift CI/CD Pipelines</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn how to set up Continuous Integration/Continuous Deployment (CI/CD) pipelines in OpenShift using Jenkins.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Introduction to CI/CD in OpenShift</li>
+            <li>Setting up Jenkins in OpenShift</li>
+            <li>Creating Pipelines with OpenShift Pipelines</li>
+            <li>Integrating GitHub repositories with OpenShift for automated builds</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Set up Jenkins in your OpenShift Cluster and create a simple pipeline.</li>
+            <li>Integrate a GitHub repository to trigger builds and deployments in OpenShift.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 9: OpenShift Monitoring and Logging</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn how to monitor and log applications and resources in OpenShift.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Setting up Monitoring in OpenShift using Prometheus and Grafana</li>
+            <li>Accessing OpenShift Logs with `oc logs`</li>
+            <li>Using EFK stack (Elasticsearch, Fluentd, Kibana) for centralized logging</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Set up Prometheus and Grafana in OpenShift for monitoring resources.</li>
+            <li>Install the EFK stack for centralized logging in OpenShift.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 10: Advanced OpenShift Topics and Best Practices</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Explore advanced OpenShift concepts, troubleshooting techniques, and best practices.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Advanced Networking and Service Mesh in OpenShift</li>
+            <li>OpenShift Operators and Custom Resources (CRDs)</li>
+            <li>OpenShift Troubleshooting techniques and debugging</li>
+            <li>Best practices for securing and scaling OpenShift clusters</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Configure a Service Mesh with Istio in OpenShift.</li>
+            <li>Deploy an OpenShift Operator and create a Custom Resource (CR).</li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <p>2018 Deep Learning Centre, Gurugram. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

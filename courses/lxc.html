@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Learning Lecture: LXC (Linux Containers) by Deep Learning Centre Gurgaon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0044cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section h2 {
+            color: #0044cc;
+        }
+        section p {
+            margin-bottom: 15px;
+        }
+        .highlight {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Learning Lecture: Introduction to LXC (Linux Containers)</h1>
+</header>
+
+<section>
+    <h2>What is LXC?</h2>
+    <p>
+        LXC (Linux Containers) is a technology that allows you to run multiple isolated Linux systems (containers) on a single physical host. These containers share the same kernel but operate as independent systems, with their own processes, file systems, and network stacks.
+    </p>
+
+    <h2>Key Features of LXC</h2>
+    <ul>
+        <li><strong>Lightweight:</strong> Containers are lightweight compared to virtual machines since they share the host kernel.</li>
+        <li><strong>Isolation:</strong> Each container has its own environment, processes, and network interfaces.</li>
+        <li><strong>Resource Efficiency:</strong> Containers consume fewer resources than VMs, making them ideal for scalable applications.</li>
+        <li><strong>Portability:</strong> Containers can be moved between different environments with minimal setup.</li>
+    </ul>
+
+    <h2>How Does LXC Work?</h2>
+    <p>
+        LXC works by leveraging Linux namespaces and control groups (cgroups). It uses <strong>namespaces</strong> to isolate different parts of the container, such as the file system, process ID, and network stack. <strong>Control groups (cgroups)</strong> are used to limit and manage the resources (CPU, memory, etc.) available to each container.
+    </p>
+
+    <div class="highlight">
+        <h3>Core Components:</h3>
+        <ul>
+            <li><strong>Namespace:</strong> Isolates resources (PID, filesystem, user, network, etc.) between containers.</li>
+            <li><strong>Cgroups:</strong> Limits and tracks resource usage for containers.</li>
+            <li><strong>Chroot:</strong> Changes the root filesystem for a container, providing its isolated environment.</li>
+        </ul>
+    </div>
+
+    <h2>Setting Up LXC</h2>
+    <p>
+        To use LXC, you'll need to have the LXC software installed on a Linux-based system. Heres how you can install LXC on a Debian-based system:
+    </p>
+
+    <div class="highlight">
+        <pre>
+sudo apt update
+sudo apt install lxc
+        </pre>
+    </div>
+
+    <h2>Managing Containers with LXC</h2>
+    <p>
+        Once youve installed LXC, you can use the `lxc` command to create and manage containers. Some useful commands include:
+    </p>
+
+    <ul>
+        <li><strong>Create a container:</strong> <code>lxc create <container-name> -t ubuntu</code></li>
+        <li><strong>Start a container:</strong> <code>lxc start <container-name></code></li>
+        <li><strong>Stop a container:</strong> <code>lxc stop <container-name></code></li>
+        <li><strong>List all containers:</strong> <code>lxc list</code></li>
+        <li><strong>Attach to a running container:</strong> <code>lxc exec <container-name> -- /bin/bash</code></li>
+    </ul>
+
+    <h2>Use Cases for LXC</h2>
+    <ul>
+        <li><strong>Development and Testing:</strong> Developers can use LXC to test software in an isolated environment without affecting the host system.</li>
+        <li><strong>Microservices:</strong> Containers are ideal for deploying microservices that need isolation and scalability.</li>
+        <li><strong>Efficient Resource Usage:</strong> LXC is suitable for running multiple services on a single physical machine without wasting resources.</li>
+    </ul>
+
+    <h2>Comparison: LXC vs Docker</h2>
+    <p>
+        LXC and Docker are both containerization technologies, but they are used for different purposes. Docker focuses on packaging applications and their dependencies into portable containers. LXC, on the other hand, is designed to provide a full system container, which allows you to run multiple Linux distributions on a single host.
+    </p>
+
+    <div class="highlight">
+        <h3>Key Differences:</h3>
+        <ul>
+            <li><strong>LXC:</strong> Provides a full system container (runs a full OS).</li>
+            <li><strong>Docker:</strong> Primarily used to package and run applications in isolated environments.</li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <p>2018 Deep Learning Centre, Gurugram. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

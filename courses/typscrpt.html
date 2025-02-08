@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript in HTML - Learning Lecture Plan by Deep Learning Centre Gurgaon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 5px;
+            font-family: monospace;
+        }
+
+        .assignment, .assessment {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Learning TypeScript in HTML</h1>
+        <p>This lecture plan covers the basics of using TypeScript with HTML and building web applications.</p>
+    </header>
+
+    <section class="section">
+        <h2>Week 1: Introduction to TypeScript & HTML Setup</h2>
+        <div class="section">
+            <h3>Lecture 1: What is TypeScript?</h3>
+            <ul>
+                <li>Introduction to TypeScript as a typed superset of JavaScript.</li>
+                <li>Differences between TypeScript and JavaScript.</li>
+                <li>Key features: static typing, interfaces, classes.</li>
+                <li>Benefits of using TypeScript: early error detection, maintainability, etc.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>Lecture 2: Setting up TypeScript with HTML</h3>
+            <ul>
+                <li>Install Node.js and TypeScript.</li>
+                <li>Create a basic HTML project and set up TypeScript configuration.</li>
+                <li>Compile TypeScript files into JavaScript.</li>
+                <li>Link TypeScript files to HTML and transpile code using the TypeScript compiler.</li>
+            </ul>
+            <pre><code>npm install -g typescript</code></pre>
+            <pre><code>tsc file.ts</code></pre>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Week 2: Core TypeScript Features for Web Development</h2>
+        <div class="section">
+            <h3>Lecture 3: Basic TypeScript Syntax</h3>
+            <ul>
+                <li>Declaring variables with `let`, `const`, and `var`.</li>
+                <li>Using types like `string`, `number`, `boolean` in TypeScript.</li>
+                <li>Type inference and type annotation.</li>
+                <li>Function declarations and return types.</li>
+            </ul>
+            <pre><code>let message: string = "Hello, TypeScript!";</code></pre>
+        </div>
+        <div class="section">
+            <h3>Lecture 4: Using TypeScript with the DOM</h3>
+            <ul>
+                <li>Access HTML elements using TypeScript.</li>
+                <li>Adding event listeners and interacting with user input.</li>
+                <li>TypeScript and DOM manipulation (querySelector, addEventListener).</li>
+            </ul>
+            <pre><code>
+let button = document.querySelector("#myButton")!;
+button.addEventListener("click", () => {
+    let message = document.querySelector("#message");
+    message!.innerText = "Button clicked!";
+});
+            </code></pre>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Week 3: Advanced TypeScript Concepts</h2>
+        <div class="section">
+            <h3>Lecture 5: TypeScript Classes and Interfaces</h3>
+            <ul>
+                <li>Creating classes in TypeScript and using constructors.</li>
+                <li>Interfaces for type-checking objects and classes.</li>
+            </ul>
+            <pre><code>
+interface Person {
+    name: string;
+    age: number;
+}
+
+class User implements Person {
+    constructor(public name: string, public age: number) {}
+    greet() {
+        return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+    }
+}
+
+let user = new User("Alice", 25);
+console.log(user.greet());
+            </code></pre>
+        </div>
+        <div class="section">
+            <h3>Lecture 6: TypeScript and Complex Forms</h3>
+            <ul>
+                <li>Working with HTML forms using TypeScript.</li>
+                <li>Handling form validation and submission.</li>
+            </ul>
+            <pre><code>
+document.querySelector("form")!.addEventListener("submit", (event) => {
+    event.preventDefault();
+    let username = (document.querySelector("#username") as HTMLInputElement).value;
+    if (username.trim() === "") {
+        alert("Username cannot be empty.");
+    } else {
+        alert("Form submitted successfully!");
+    }
+});
+            </code></pre>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Week 4: Building a Simple Web Application with TypeScript and HTML</h2>
+        <div class="section">
+            <h3>Lecture 7: Building a To-Do List Application</h3>
+            <ul>
+                <li>Create a basic To-Do list application.</li>
+                <li>Use TypeScript to add, remove, and store tasks.</li>
+                <li>Understand TypeScript's interaction with localStorage.</li>
+            </ul>
+            <pre><code>
+let taskInput = document.querySelector("#taskInput") as HTMLInputElement;
+let addButton = document.querySelector("#addButton") as HTMLButtonElement;
+let taskList = document.querySelector("#taskList")!;
+
+addButton.addEventListener("click", () => {
+    if (taskInput.value.trim() !== "") {
+        let listItem = document.createElement("li");
+        listItem.textContent = taskInput.value;
+        taskList.appendChild(listItem);
+        taskInput.value = "";
+    }
+});
+            </code></pre>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Week 5: Conclusion and Further Exploration</h2>
+        <div class="section">
+            <h3>Lecture 8: Review and Next Steps</h3>
+            <ul>
+                <li>Recap of key TypeScript concepts learned.</li>
+                <li>Introduction to TypeScript frameworks (Angular, React).</li>
+                <li>Exploration of advanced features like decorators, async/await, and generics.</li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="assignment">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Assignment 1: Create a simple web page with a form that takes user input and displays a personalized greeting.</li>
+            <li>Assignment 2: Build a To-Do List application with TypeScript and HTML, including local storage functionality.</li>
+        </ul>
+    </div>
+
+    <div class="assessment">
+        <h3>Assessment:</h3>
+        <ul>
+            <li>Evaluate the assignments based on functionality, use of TypeScript features, and code organization.</li>
+        </ul>
+    </div>
+
+<footer>
+    <p>2018 Deep Learning Centre, Gurugram. All Rights Reserved.</p>
+</footer>
+</body>
+
+</html>

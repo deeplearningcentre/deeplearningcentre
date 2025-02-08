@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Learning Plan by Deep Learning Centre Gurgaon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin: 8px 0;
+        }
+        .week {
+            background-color: #e6f7ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .assignments {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Docker Learning Plan by Deep Learning Centre Gurgaon</h1>
+</header>
+
+<section>
+    <h2>Week 1: Introduction to Docker and Containerization</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Understand the basic concepts of Docker and containerization.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>What is Docker?</li>
+            <li>Containerization vs Virtualization</li>
+            <li>Docker Architecture: Images, Containers, Docker Daemon</li>
+            <li>Installing Docker on various platforms (Linux, Windows, macOS)</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Install Docker on your machine.</li>
+            <li>Run your first "Hello World" container using `docker run`.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 2: Docker Images and Containers</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn how Docker images and containers work, and how to manage them.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Understanding Docker Images</li>
+            <li>Docker Containers: Running, stopping, and removing containers</li>
+            <li>Basic Docker Commands: `docker run`, `docker ps`, `docker stop`, `docker rm`</li>
+            <li>Building and running your own Docker images</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Run multiple containers and manage them using basic Docker commands.</li>
+            <li>Create a custom Docker image and run a container from it.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 3: Dockerfile and Building Custom Images</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn how to create a Dockerfile to build custom Docker images.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>What is a Dockerfile?</li>
+            <li>Creating Dockerfile instructions: `FROM`, `RUN`, `CMD`, `COPY`, `WORKDIR`</li>
+            <li>Building Docker images using `docker build`</li>
+            <li>Understanding best practices for writing Dockerfiles</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Create a simple web application, write a Dockerfile for it, and build the image.</li>
+            <li>Optimize the Dockerfile by reducing the image size and improving build efficiency.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 4: Docker Compose</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn how to manage multi-container applications using Docker Compose.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Introduction to Docker Compose</li>
+            <li>Creating a `docker-compose.yml` file</li>
+            <li>Running multi-container applications with Docker Compose</li>
+            <li>Scaling applications using Docker Compose</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Set up a multi-container application using Docker Compose (e.g., web app with a database).</li>
+            <li>Experiment with scaling containers and connecting them through Docker Compose.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 5: Docker Networking</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn how networking works in Docker and how to configure container communication.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Docker Networking Overview: Bridge, Host, and Overlay networks</li>
+            <li>Creating and managing custom networks in Docker</li>
+            <li>Linking containers with networking</li>
+            <li>Docker Network Inspection and Troubleshooting</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Create a custom Docker network and connect containers on it.</li>
+            <li>Inspect and troubleshoot network configurations using Docker network commands.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 6: Docker Volumes and Data Persistence</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Understand how Docker handles data persistence through volumes.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Understanding Docker Volumes: Persistent data storage</li>
+            <li>Creating and using Docker volumes</li>
+            <li>Mounting host directories as Docker volumes</li>
+            <li>Docker data management and backups</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Create a volume and mount it to a container.</li>
+            <li>Work with a database container and persist its data using Docker volumes.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 7: Docker Security Best Practices</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn security best practices for Docker images, containers, and the Docker daemon.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Docker Image Security: Scanning for vulnerabilities</li>
+            <li>Running Docker containers with limited privileges</li>
+            <li>Using Docker Content Trust (DCT)</li>
+            <li>Securing Docker Daemon and User Permissions</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Scan Docker images for vulnerabilities using tools like Trivy or Clair.</li>
+            <li>Secure the Docker daemon by setting up user permissions and role-based access control (RBAC).</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 8: Introduction to Docker Swarm</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn how to orchestrate Docker containers with Docker Swarm for cluster management.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>What is Docker Swarm?</li>
+            <li>Initializing a Docker Swarm Cluster</li>
+            <li>Deploying and managing services in Docker Swarm</li>
+            <li>Scaling and updating services in a Swarm cluster</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Initialize a Docker Swarm cluster with multiple nodes.</li>
+            <li>Deploy and manage services using `docker service` commands in Swarm mode.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 9: Docker Monitoring and Logging</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn how to monitor and log Docker containers to ensure they run smoothly.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Docker Logs: Accessing container logs with `

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-Week Containerization & Virtualization Learning Plan by Deep Learning Centre Gurgaon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #0066cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #0066cc;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin: 8px 0;
+        }
+        .week {
+            background-color: #e6f7ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .assignments {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>12-Week Containerization & Virtualization Learning Plan by Deep Learning Centre Gurgaon</h1>
+</header>
+
+<section>
+    <h2>Week 1: Introduction to Virtualization and Containerization</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Understand the basics of virtualization and containerization, their differences, and use cases.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Introduction to Virtualization: Concepts, hypervisors (Type 1 and Type 2).</li>
+            <li>Introduction to Containerization: Concepts, advantages over traditional virtualization.</li>
+            <li>Comparison: Virtual Machines vs Containers.</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Research and create a comparison chart for Virtual Machines vs Containers.</li>
+            <li>Install VirtualBox or VMware Workstation and explore basic virtual machine setup.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 2: Virtualization Technologies - Hypervisors and Virtual Machines</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn about hypervisors, virtual machines, and their setup in real environments.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Understanding Hypervisors: Type 1 (bare-metal) and Type 2 (hosted) hypervisors.</li>
+            <li>Creating and managing Virtual Machines (VMs) using VMware or VirtualBox.</li>
+            <li>Virtual Networking: Configuring virtual switches and network adapters for VMs.</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Create a Virtual Machine using VirtualBox or VMware and install an OS of your choice.</li>
+            <li>Experiment with virtual networking: Set up a virtual network for VMs.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 3: Introduction to Docker</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn the basics of Docker, one of the most widely used containerization tools.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Introduction to Docker: Concepts, images, containers, and the Docker daemon.</li>
+            <li>Installing Docker: Setup Docker on your local machine (Windows, Mac, or Linux).</li>
+            <li>Basic Docker Commands: `docker run`, `docker ps`, `docker build`, and `docker images`.</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Install Docker on your machine and run a "Hello World" container.</li>
+            <li>Explore Docker images and containers using `docker ps` and `docker images`.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 4: Docker Images and Dockerfile</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn how to create and manage custom Docker images using a Dockerfile.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Docker Images: Understanding how Docker images work.</li>
+            <li>Writing Dockerfile: How to create a custom Docker image from scratch.</li>
+            <li>Building and managing images with `docker build` and `docker push`.</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Create a simple web app, write a Dockerfile for it, and build the image.</li>
+            <li>Push your custom image to Docker Hub.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 5: Docker Compose for Multi-Container Applications</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn how to manage multi-container applications using Docker Compose.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Introduction to Docker Compose: Define multi-container environments.</li>
+            <li>Docker Compose File (`docker-compose.yml`): Structure, services, volumes, and networks.</li>
+            <li>Managing Docker Compose: Commands such as `docker-compose up`, `docker-compose down`.</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Create a simple multi-container application using Docker Compose (e.g., web app with a database).</li>
+            <li>Learn to scale containers using `docker-compose scale`.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 6: Networking in Docker Containers</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Understand networking concepts in Docker containers and how to configure networks between containers.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Docker Networking: Network drivers, bridge, host, overlay.</li>
+            <li>Linking Containers: Connect containers using networks in Docker.</li>
+            <li>Inspecting Networks: Use `docker network inspect` and other network-related commands.</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Create a custom network in Docker and run multiple containers on it.</li>
+            <li>Experiment with linking containers and inspecting networks.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 7: Introduction to Kubernetes</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Understand the basics of Kubernetes, a powerful container orchestration tool.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Introduction to Kubernetes: Concepts, architecture (Pods, Nodes, Clusters).</li>
+            <li>Setting up a local Kubernetes cluster using Minikube or Docker Desktop.</li>
+            <li>Basic Kubernetes Commands: `kubectl` commands for managing pods, services, deployments.</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Install Minikube or enable Kubernetes in Docker Desktop and start a cluster.</li>
+            <li>Run your first Kubernetes pod and explore `kubectl get pods`.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 8: Kubernetes Deployments and Services</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn how to deploy applications and expose them using Kubernetes deployments and services.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Deployments: How to create and manage deployments in Kubernetes.</li>
+            <li>Services: Exposing applications with Kubernetes Services (ClusterIP, NodePort, LoadBalancer).</li>
+            <li>Scaling applications: How to scale pods in Kubernetes.</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Create a simple deployment in Kubernetes.</li>
+            <li>Expose the application using a Kubernetes Service and scale it up/down.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 9: Advanced Kubernetes Concepts</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Explore advanced features of Kubernetes, including persistent storage and ConfigMaps.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Persistent Volumes and Storage: Configuring persistent storage for applications in Kubernetes.</li>
+            <li>ConfigMaps and Secrets: Managing application configuration and sensitive data in Kubernetes.</li>
+            <li>Namespaces: Isolating resources within Kubernetes clusters using namespaces.</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Set up persistent volumes and use them in a Kubernetes deployment.</li>
+            <li>Create and manage ConfigMaps and Secrets in Kubernetes.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 10: Monitoring and Logging in Containers</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn about container monitoring and logging to ensure applications are running smoothly.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Logging: Set up logging for containers using Docker logs and centralized logging solutions.</li>
+            <li>Monitoring: Use tools like Prometheus, Grafana for container monitoring.</li>
+            <li>Health Checks: Implement health checks for your Docker containers and Kubernetes pods.</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Set up logging for your Docker containers using `docker logs` and explore centralized logging.</li>
+            <li>Monitor a Docker container using Prometheus and Grafana.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 11: Security in Containers</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Understand container security best practices and how to secure your Docker and Kubernetes environments.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Securing Docker Images: Scan images for vulnerabilities using tools like Clair or Trivy.</li>
+            <li>Securing Kubernetes: Authentication, RBAC, Network Policies.</li>
+            <li>Container Runtime Security: Configuring container runtimes with security best practices.</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Scan your Docker images for vulnerabilities using a scanning tool like Trivy.</li>
+            <li>Implement Kubernetes RBAC policies and network policies for securing resources.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 12: Final Project and Recap</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Apply everything learned in a final project, covering containerization, Kubernetes, and security practices.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Final Project: Build and deploy a multi-container application using Docker, Kubernetes, and all concepts learned.</li>
+            <li>Recap: Review key concepts and address final questions or issues.</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Complete your final project, demonstrating skills learned throughout the course.</li>
+            <li>Present your project and explain the architecture and security practices used.</li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <p>2018 Deep Learning Centre, Gurugram. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

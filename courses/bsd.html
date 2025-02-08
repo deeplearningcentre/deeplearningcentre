@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn FreeBSD - Weekly Lecture Plan by Deep Learning Centre Gurgaon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #333;
+        }
+        .week {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .week h3 {
+            margin-top: 0;
+        }
+        .lecture {
+            margin-bottom: 15px;
+        }
+        .lecture h4 {
+            margin-bottom: 5px;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Learn FreeBSD - Weekly Lecture Plan by Deep Learning Centre Gurgaon</h1>
+</header>
+
+<div class="container">
+    <div class="week">
+        <h3>Week 1: Introduction to FreeBSD & Basic System Setup</h3>
+        <div class="lecture">
+            <h4>Lecture 1.1: Introduction to FreeBSD</h4>
+            <ul>
+                <li>Overview of FreeBSD: What it is, history, and key features</li>
+                <li>The FreeBSD project and community</li>
+                <li>Differences between FreeBSD, Linux, and other Unix-like operating systems</li>
+                <li>Understanding the FreeBSD release cycle and support</li>
+            </ul>
+        </div>
+        <div class="lecture">
+            <h4>Lecture 1.2: Installing FreeBSD</h4>
+            <ul>
+                <li>Preparing for installation: System requirements and choosing installation media</li>
+                <li>Installing FreeBSD using DVD or USB</li>
+                <li>Basic partitioning concepts (UFS, ZFS)</li>
+                <li>First steps after installation: Creating a user, setting up the root password, and basic system configuration</li>
+            </ul>
+        </div>
+        <div class="lecture">
+            <h4>Lecture 1.3: Understanding the FreeBSD File System</h4>
+            <ul>
+                <li>Overview of the FreeBSD file system structure (e.g., /usr, /etc, /var)</li>
+                <li>Working with UFS (Unix File System) and ZFS (Zettabyte File System)</li>
+                <li>Mounting and unmounting file systems</li>
+                <li>Filesystem hierarchy and navigation using the shell</li>
+            </ul>
+        </div>
+        <div class="lecture">
+            <h4>Lecture 1.4: Basic Command-Line Usage</h4>
+            <ul>
+                <li>Introduction to the FreeBSD shell and basic commands (ls, cp, mv, rm, cat, etc.)</li>
+                <li>Navigating directories and working with files</li>
+                <li>Understanding the `man` (manual) command to access help for commands</li>
+                <li>Using pipes, redirection, and basic shell scripting</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="week">
+        <h3>Week 2: FreeBSD System Administration & Networking</h3>
+        <div class="lecture">
+            <h4>Lecture 2.1: User and Group Management</h4>
+            <ul>
+                <li>Adding, modifying, and deleting users and groups</li>
+                <li>File ownership and permissions in FreeBSD</li>
+                <li>Sudo vs. root: Understanding privileges</li>
+                <li>User management tools: `pw`, `usermod`, and `groupadd`</li>
+            </ul>
+        </div>
+        <div class="lecture">
+            <h4>Lecture 2.2: Package Management with `pkg`</h4>
+            <ul>
+                <li>Introduction to FreeBSD package management</li>
+                <li>Installing, upgrading, and removing packages using the `pkg` command</li>
+                <li>Managing dependencies and checking package status</li>
+                <li>Introduction to ports and compiling software from source</li>
+            </ul>
+        </div>
+        <div class="lecture">
+            <h4>Lecture 2.3: Configuring Networking</h4>
+            <ul>
+                <li>Network interfaces and configuration files</li>
+                <li>Configuring a static IP address, DHCP, and routing</li>
+                <li>Troubleshooting networking issues: `ping`, `ifconfig`, `netstat`, and `traceroute`</li>
+                <li>Network services (DNS, NTP, etc.) and setting up network interfaces</li>
+            </ul>
+        </div>
+        <div class="lecture">
+            <h4>Lecture 2.4: Managing System Services</h4>
+            <ul>
+                <li>Introduction to the FreeBSD init system and service management</li>
+                <li>Using `service` to start, stop, and manage services</li>
+                <li>Enabling and disabling services at startup</li>
+                <li>Configuring system services (SSH, firewall, etc.)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="week">
+        <h3>Week 3: Advanced FreeBSD Administration & Security</h3>
+        <div class="lecture">
+            <h4>Lecture 3.1: Disk Management and Storage Solutions</h4>
+            <ul>
+                <li>Understanding disk partitions and storage devices in FreeBSD</li>
+                <li>Using `gpart` and `disklabel` to manage partitions</li>
+                <li>Introduction to ZFS: Creating and managing ZFS pools</li>
+                <li>Setting up and using RAID in FreeBSD with `gmirror`, `gstripe`, and `graid`</li>
+            </ul>
+        </div>
+        <div class="lecture">
+            <h4>Lecture 3.2: System Security and Hardening</h4>
+            <ul>
+                <li>Configuring firewall using `pf` (Packet Filter) in FreeBSD</li>
+                <li>Enabling and configuring SSH access securely</li>
+                <li>Using `sudo` for privileged access and enforcing security policies</li>
+                <li>Installing and using security tools like `fail2ban` and `rootkit hunters`</li>
+            </ul>
+        </div>
+        <div class="lecture">
+            <h4>Lecture 3.3: Performance Tuning and Monitoring</h4>
+            <ul>
+                <li>Tools for monitoring system performance: `top`, `sysctl`, `vmstat`</li>
+                <li>Configuring resource limits and kernel parameters</li>
+                <li>Understanding system logs and using `syslog` for monitoring</li>
+                <li>Optimizing disk performance and network throughput</li>
+            </ul>
+        </div>
+        <div class="lecture">
+            <h4>Lecture 3.4: Backup and Restore Strategies</h4>
+            <ul>
+                <li>Introduction to FreeBSD backup tools (e.g., `dump`, `restore`, `rsync`)</li>
+                <li>Creating automated backup scripts</li>
+                <li>Scheduling backups with `cron`</li>
+                <li>Restoring from backup and disaster recovery procedures</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="week">
+        <h3>Week 4: FreeBSD Networking Services & Virtualization</h3>
+        <div class="lecture">
+            <h4>Lecture 4.1: Configuring Web and DNS Servers</h4>
+            <ul>
+                <li>Setting up and configuring Apache or Nginx web server</li>
+                <li>Installing and configuring PHP for web development</li>
+                <li>Configuring a DNS server using `bind` or `dnsmasq`</li>
+                <li>Basic web security practices for securing servers</li>
+            </ul>
+        </div>
+        <div class="lecture">
+            <h4>Lecture 4.2: Configuring Email Services</h4>
+            <ul>
+                <li>Setting up an email server using `Postfix` and `Dovecot`</li>
+                <li>Configuring SpamAssassin and other anti-spam tools</li>
+                <li>Sending and receiving mail through a local server</li>
+                <li>Understanding and configuring email security (TLS, SPF, DKIM)</li>
+            </ul>
+        </div>
+        <div class="lecture">
+            <h4>Lecture 4.3: Virtualization with FreeBSD</h4>
+            <ul>
+                <li>Introduction to FreeBSD virtualization options: VirtualBox, bhyve</li>
+                <li>Setting up a virtual machine using bhyve</li>
+                <li>Configuring network interfaces and virtual disks in virtualization</li>
+                <li>Migrating virtual machines and taking snapshots</li>
+            </ul>
+        </div>
+        <div class="lecture">
+            <h4>Lecture 4.4: Final Project & Review</h4>
+            <ul>
+                <li>Final project: Deploying a full-featured FreeBSD server (web server, firewall, DNS, etc.)</li>
+                <li>Comprehensive review of FreeBSD concepts learned</li>
+                <li>Q&A session to clear up any doubts</li>
+                <li>Next steps for further learning (advanced networking, tuning, etc.)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="week">
+        <h3>Conclusion & Next Steps</h3>
+        <ul>
+            <li>Wrap-Up: Review all key concepts learned throughout the course</li>
+            <li>Further Exploration: Recommended resources for advanced topics in FreeBSD</li>
+            <li>Q&A Session: Address any remaining questions and concerns</li>
+        </ul>
+    </div>
+
+    <div class="week">
+        <h3>Optional Final Project</h3>
+        <p>Assignment: Set up a FreeBSD-based server with a web server, DNS, and email service. Implement a firewall with `pf`, ensure the system is secure, and automate backups. Submit a project report detailing the setup and configurations made.</p>
+    </div>
+</div>
+
+<footer>
+    <p>2018 Deep Learning Centre, Gurugram. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

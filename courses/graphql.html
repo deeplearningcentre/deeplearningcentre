@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraphQL Web Development Learning Lecture Plan by Deep Learning Centre Gurgaon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        h3 {
+            color: #34495e;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+        ul {
+            margin: 10px 0;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .important {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Web Development Learning Lecture Plan: GraphQL</h1>
+    
+    <div class="section">
+        <h2>Introduction to GraphQL</h2>
+        <p>GraphQL is a powerful query language for APIs and a runtime for executing those queries. It provides a more flexible, efficient, and client-friendly approach compared to RESTful APIs.</p>
+        <h3>Key Points:</h3>
+        <ul>
+            <li>What is GraphQL?</li>
+            <li>Why use GraphQL over REST?</li>
+            <li>Benefits of GraphQL</li>
+            <li>Common use cases for GraphQL in modern web development</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Core Concepts of GraphQL</h2>
+        <p>Understanding the main components of GraphQL is crucial for mastering its use:</p>
+        <ul>
+            <li><strong>Queries:</strong> Requesting data from the server</li>
+            <li><strong>Mutations:</strong> Modifying data on the server</li>
+            <li><strong>Subscriptions:</strong> Real-time data updates</li>
+            <li><strong>Schema:</strong> Defines the types of data and operations available in the API</li>
+            <li><strong>Resolvers:</strong> Functions that fulfill a query's request</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Setting Up a GraphQL Server</h2>
+        <p>In this section, we will learn how to create a simple GraphQL server using Node.js, Express, and Apollo Server.</p>
+        <h3>Steps:</h3>
+        <ul>
+            <li>Install Node.js and npm (Node Package Manager)</li>
+            <li>Install Apollo Server and GraphQL libraries</li>
+            <li>Create a basic schema with types and resolvers</li>
+            <li>Set up a basic server using Express</li>
+            <li>Run the server and test using GraphiQL or Apollo Studio</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>GraphQL Schema Design</h2>
+        <p>Designing the schema is an important aspect of GraphQL development. This section will focus on the key aspects of schema design:</p>
+        <ul>
+            <li>Defining Types (Object Types, Scalar Types, Enum Types)</li>
+            <li>Creating Queries (Root Queries)</li>
+            <li>Defining Mutations</li>
+            <li>Implementing Input Types for mutations</li>
+            <li>Using Interfaces and Unions</li>
+            <li>Understanding Schema Directives</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Working with GraphQL Queries</h2>
+        <p>This section will introduce how to write queries to request specific data from a GraphQL server.</p>
+        <ul>
+            <li>Basic Queries</li>
+            <li>Nested Queries</li>
+            <li>Aliasing and Fragments</li>
+            <li>Variables in Queries</li>
+            <li>Error handling in queries</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>GraphQL Mutations</h2>
+        <p>Learn how to perform data-changing operations through GraphQL mutations.</p>
+        <ul>
+            <li>Basic Mutation Syntax</li>
+            <li>Handling Arguments in Mutations</li>
+            <li>Returning Data from Mutations</li>
+            <li>Working with Complex Mutations</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>GraphQL Subscriptions</h2>
+        <p>GraphQL Subscriptions allow clients to subscribe to real-time updates. Learn how to set up and use subscriptions in your application.</p>
+        <ul>
+            <li>Setting up Subscription with WebSockets</li>
+            <li>Subscription Syntax</li>
+            <li>Handling Subscription in the Client</li>
+            <li>Best Practices for Subscriptions</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Integrating GraphQL with Frontend</h2>
+        <p>Learn how to interact with your GraphQL API from the frontend using popular libraries.</p>
+        <ul>
+            <li>Introduction to Apollo Client</li>
+            <li>Setting up Apollo Client in a React app</li>
+            <li>Making Queries and Mutations from the frontend</li>
+            <li>Managing Cache with Apollo Client</li>
+            <li>Optimizing Performance in Frontend</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Security Considerations</h2>
+        <p>Security is essential when working with GraphQL APIs. This section will cover best practices and potential vulnerabilities.</p>
+        <ul>
+            <li>Rate Limiting</li>
+            <li>Authentication and Authorization</li>
+            <li>SQL Injection in GraphQL</li>
+            <li>Depth Limiting</li>
+            <li>Preventing DOS attacks</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Advanced Topics</h2>
+        <p>Once you're comfortable with the basics, you can dive deeper into advanced GraphQL topics:</p>
+        <ul>
+            <li>GraphQL Federation for Microservices</li>
+            <li>Schema Stitching</li>
+            <li>GraphQL with NoSQL databases (MongoDB)</li>
+            <li>Performance Optimization with Dataloader</li>
+            <li>GraphQL and Serverless Architectures</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Conclusion</h2>
+        <p>By the end of this course, you should be able to design, implement, and query GraphQL APIs confidently. The skills you learn here will help you build more efficient and maintainable web applications.</p>
+        <p class="important">Don't forget to practice by building real-world projects to solidify your understanding of GraphQL!</p>
+    </div>
+    
+<footer>
+    <p>2018 Deep Learning Centre, Gurugram. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

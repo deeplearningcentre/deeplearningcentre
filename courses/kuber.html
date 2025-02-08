@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kubernetes Learning Plan by Deep Learning Centre Gurgaon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #0066cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #0066cc;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin: 8px 0;
+        }
+        .week {
+            background-color: #e6f7ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .assignments {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Kubernetes Learning Plan by Deep Learning Centre Gurgaon</h1>
+</header>
+
+<section>
+    <h2>Week 1: Introduction to Kubernetes</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Understand the basic concepts of Kubernetes and container orchestration.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>What is Kubernetes?</li>
+            <li>Why use Kubernetes?</li>
+            <li>Components of Kubernetes: Pods, Nodes, Cluster</li>
+            <li>Introduction to Kubernetes Architecture</li>
+            <li>Setting up a Kubernetes Cluster (Minikube or Docker Desktop)</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Install Minikube or enable Kubernetes in Docker Desktop.</li>
+            <li>Start a local Kubernetes cluster and verify with `kubectl get nodes`.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 2: Kubernetes Pods</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn about Kubernetes Pods, the basic unit of deployment in Kubernetes.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>What is a Pod?</li>
+            <li>Creating Pods using `kubectl` commands</li>
+            <li>Understanding Pod Lifecycle and States</li>
+            <li>Pod Management: Scaling Pods and Rolling Updates</li>
+            <li>Working with Multi-container Pods</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Create a simple Pod using `kubectl run` and verify its status.</li>
+            <li>Scale a Pod and experiment with rolling updates in Kubernetes.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 3: Kubernetes Services</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn how to expose applications and services in Kubernetes using Services.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>What is a Kubernetes Service?</li>
+            <li>Types of Services: ClusterIP, NodePort, LoadBalancer, ExternalName</li>
+            <li>Creating and Managing Services</li>
+            <li>Accessing Services within the Cluster and from outside the Cluster</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Create a Service to expose a Pod using `kubectl expose`.</li>
+            <li>Test the Service by accessing the Pod internally and externally.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 4: Kubernetes Deployments</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Understand how to manage applications in Kubernetes with Deployments.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>What is a Deployment in Kubernetes?</li>
+            <li>Creating and managing Deployments using `kubectl`</li>
+            <li>Rolling Updates and Rollbacks</li>
+            <li>Scaling Deployments</li>
+            <li>Working with Deployment Strategies (Recreate, RollingUpdate)</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Create a Deployment to deploy a simple web application.</li>
+            <li>Perform a rolling update and rollback on the Deployment.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 5: Kubernetes Volumes</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn how to manage persistent storage in Kubernetes using Volumes.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>What is a Kubernetes Volume?</li>
+            <li>Types of Volumes: EmptyDir, HostPath, NFS, PersistentVolume</li>
+            <li>Persistent Volumes (PVs) and Persistent Volume Claims (PVCs)</li>
+            <li>Mounting Volumes in Pods and Deployments</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Create a Persistent Volume and Persistent Volume Claim in Kubernetes.</li>
+            <li>Mount the volume to a Pod and deploy a stateful application.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 6: Kubernetes ConfigMaps and Secrets</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn how to manage configuration and sensitive data in Kubernetes using ConfigMaps and Secrets.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>What is a ConfigMap?</li>
+            <li>Creating and using ConfigMaps in Kubernetes</li>
+            <li>What are Secrets in Kubernetes?</li>
+            <li>Creating and managing Secrets in Kubernetes</li>
+            <li>Injecting ConfigMaps and Secrets into Pods</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Create a ConfigMap and use it to store configuration data in a Pod.</li>
+            <li>Store sensitive data in Kubernetes Secrets and inject them into Pods.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 7: Kubernetes Namespaces and RBAC</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Understand how to manage and secure Kubernetes resources using Namespaces and Role-Based Access Control (RBAC).</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>What is a Namespace in Kubernetes?</li>
+            <li>Managing resources in different namespaces</li>
+            <li>Introduction to RBAC (Role-Based Access Control)</li>
+            <li>Creating and managing Roles and RoleBindings</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Create a new namespace and deploy applications in it.</li>
+            <li>Set up RBAC policies and assign roles using `kubectl create role` and `kubectl create rolebinding`.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 8: Advanced Kubernetes Concepts</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn advanced concepts like Helm, Kubernetes Operators, and Cluster Autoscaling.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Introduction to Helm: Kubernetes Package Manager</li>
+            <li>Using Helm to deploy applications</li>
+            <li>What are Kubernetes Operators?</li>
+            <li>Implementing Cluster Autoscaling in Kubernetes</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Install and use Helm to deploy a complex application.</li>
+            <li>Explore Kubernetes Operators and try installing one from the Operator Hub.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 9: Kubernetes Monitoring and Logging</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Learn how to monitor and log Kubernetes clusters for troubleshooting and performance tuning.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Setting up Prometheus for Kubernetes Monitoring</li>
+            <li>Integrating Grafana with Prometheus</li>
+            <li>Accessing Kubernetes Logs with `kubectl logs`</li>
+            <li>Centralized Logging with Fluentd and Elasticsearch</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Install Prometheus and Grafana to monitor your Kubernetes cluster.</li>
+            <li>Set up centralized logging using Fluentd and Elasticsearch.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Week 10: Kubernetes Security</h2>
+    <div class="week">
+        <h3>Objective:</h3>
+        <p>Understand how to secure a Kubernetes cluster and its resources.</p>
+        <h3>Topics Covered:</h3>
+        <ul>
+            <li>Securing Kubernetes Cluster with Network Policies</li>
+            <li>Using Kubernetes Pod Security Policies (PSPs)</li>
+            <li>Security Best Practices for Kubernetes Deployments</li>
+        </ul>
+    </div>
+    <div class="assignments">
+        <h3>Assignments:</h3>
+        <ul>
+            <li>Implement Kubernetes Network Policies to secure Pod communication.</li>
+            <li>Configure Pod Security Policies (PSPs) and enforce security in your cluster.</li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <p>2018 Deep Learning Centre, Gurugram. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
